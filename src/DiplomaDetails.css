@@ -1,0 +1,76 @@
+.module-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Space around cards */
+    margin: 0 -8px; /* Adjust margin for spacing */
+  }
+  
+  .module-card {
+    flex: 0 0 calc(45% - 16px); /* 45% width minus spacing */
+    background-color: #ffcc80; /* Soft peach background */
+    border: 2px solid #ffab40; /* Warm orange border */
+    border-radius: 20px; /* More rounded corners */
+    padding: 20px; /* Inner padding */
+    margin: 10px; /* Margin for spacing */
+    text-align: center; /* Center the text */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+    font-size: 1.5em; /* Larger font size for module names */
+    font-family: 'Comic Sans MS', cursive; /* Playful font */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    position: relative; /* Position for decorative element */
+    overflow: hidden; /* Ensures decorative elements stay inside */
+  }
+  
+  .module-card:hover {
+    transform: translateY(-5px); /* Slightly lift on hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25); /* Deepen shadow on hover */
+  }
+  
+  .module-card::after {
+    content: '';
+    position: absolute;
+    top: -20px; /* Positioning decoration above card */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px; /* Larger decoration */
+    height: 80px;
+    background-color: rgba(255, 204, 0, 0.3); /* Soft yellow */
+    border-radius: 50%; /* Circular decoration */
+    box-shadow: inset 0 0 15px rgba(255, 204, 0, 0.5); /* Inner shadow */
+  }
+  
+  .module-card::before {
+    content: '✨'; /* Decorative sparkle */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em; /* Size of the sparkle */
+    color: #ff9800; /* Sparkle color */
+  }
+  
+  /* Add styles for the diploma name */
+  h2 {
+    font-size: 2.5em; /* Larger font size for diploma name */
+    color: #333; /* Darker color for contrast */
+    margin-bottom: 16px; /* Space below the title */
+  }
+  
+  h3 {
+    font-size: 2em; /* Larger font size for modules heading */
+    color: #555; /* Slightly lighter color */
+    margin-top: 20px; /* Space above heading */
+  }
+  
+  /* Style for normal text */
+  p {
+    font-size: 1.2em; /* Increase font size for normal text */
+    color: #444; /* Darker color for readability */
+    margin-bottom: 16px; /* Space below the paragraph */
+  }
+  
+  @media (max-width: 600px) {
+    .module-card {
+      flex: 0 0 100%; /* Stack cards on small screens */
+    }
+  }
+  

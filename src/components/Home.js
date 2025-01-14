@@ -18,7 +18,7 @@ const Home = () => {
           <li>School of Technology of the Arts</li>
           <li>School of Sports, Health & Leisure</li>
         </ul>
-        <img src="rp-campus.jpg" alt="Republic Polytechnic Campus" />
+        
       </section>
 
       <section>

@@ -14,6 +14,7 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(formData);
     navigate('/confirmation', { state: formData });
   };
 

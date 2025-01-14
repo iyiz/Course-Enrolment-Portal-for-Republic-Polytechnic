@@ -1,0 +1,47 @@
+main {
+    padding: 20px; /* Add some padding around the main content */
+  }
+  
+  h2 {
+    font-size: 1.75em; /* Smaller font size for the main heading */
+    color: #333; /* Dark color for contrast */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  .search-bar {
+    font-size: 1em; /* Smaller font size for search bar */
+    padding: 10px; /* Add padding for better usability */
+    margin-bottom: 20px; /* Space below the search bar */
+    width: 100%; /* Full width for the search bar */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+  }
+  
+  li {
+    font-size: 1.1em; /* Smaller font size for school names */
+    margin-bottom: 10px; /* Space between school entries */
+  }
+  
+  li ul {
+    padding-left: 20px; /* Indent diploma list */
+  }
+  
+  li ul li {
+    font-size: 1em; /* Smaller font size for diploma names */
+    margin-bottom: 5px; /* Space between diploma entries */
+  }
+  
+  li ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color */
+  }
+  
+  li ul li a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+  }
+  
